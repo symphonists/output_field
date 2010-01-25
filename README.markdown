@@ -14,7 +14,9 @@ This extension extends Symphony's standard input field an offers a different dat
 
 **Mail address** 
 
-	<mailaddress alias="sam.symphonian" domain="symphony-cms.com" hash="9a6ea6ecaa6ce46c0dcfb8415993e638">sam.symphonian@symphony-cms.com</mailaddress>
+	<mailaddress alias="sam.symphonian" domain="symphony-cms.com" hash="9a6ea6ecaa6ce46c0dcfb8415993e638">
+		sam.symphonian@symphony-cms.com
+	</mailaddress>
 
 - alias 
 - domain
