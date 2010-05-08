@@ -1,9 +1,9 @@
-# Advanced Input Field
+# Output Field
 
 An input field with advanced data source output for mail addresses and URIs.
 
-- Version: 1.0
-- Date: 25th January 2010
+- Version: 1.1
+- Date: 8th May 2010
 - Author: Nils Hörrmann, post@nilshoerrmann.de
 - Repository: <http://github.com/nilshoerrmann/advanced_input>
 - Requirements: Symphony CMS 2.0.6 or newer, <http://github.com/symphony/symphony-2/tree/master>
@@ -36,6 +36,10 @@ This extension extends Symphony's standard input field an offers a different dat
 - fragment, after the hashmark `#`
 
 ### Change Log
+
+Version 1.1 - 8th May 2010
+
+- Renamed field from `advanced_input` to `output_field`
 
 Version 1.0 - 25th January 2010
 

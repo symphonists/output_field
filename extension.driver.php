@@ -1,6 +1,6 @@
 <?php
 
-	Class extension_advanced_input extends Extension {
+	Class extension_output_field extends Extension {
 
 		/**
 		 * Extension information
@@ -8,10 +8,10 @@
 
 		public function about() {
 			return array(
-				'name' => 'Advanced Input',
+				'name' => 'Field: Output',
 				'type' => 'Field',
-				'version' => '1.0',
-				'release-date' => '2010-01-25',
+				'version' => '1.1',
+				'release-date' => '2010-05-08',
 				'author' => array(
 					'name' => 'Nils Hörrmann',
 					'website' => 'http://www.nilshoerrmann.de',
@@ -20,7 +20,8 @@
 				'description' => 'An input field with advanced data source output for mail addresses and URIs.',
 				'compatibility' => array(
 					'2.0.6' => true,
-					'2.0.7' => true
+					'2.0.7' => true,
+					'2.0.8' => true
 				)
 			);
 		}
@@ -31,7 +32,7 @@
 
 		public function uninstall() {
 			// drop database table
-			Administration::instance()->Database->query("DROP TABLE `tbl_fields_advanced_input`");
+			Administration::instance()->Database->query("DROP TABLE `tbl_fields_output`");
 		}
 
 		/**
@@ -43,7 +44,9 @@
 
 		public function update($previousVersion) {
 			// Nothing yet
-			return true;
+			return Administration::instance()->Database->query(
+				"RENAME TABLE `tbl_fields_advanced_input` to `tbl_fields_output` IF EXISTS"
+			);
 		}
 
 		/**
@@ -55,7 +58,7 @@
 		public function install() {
 			// Create database table and fields.
 			return Administration::instance()->Database->query(
-				"CREATE TABLE `tbl_fields_advanced_input` (
+				"CREATE TABLE `tbl_fields_output` (
 					`id` int(11) unsigned NOT NULL auto_increment,
 					`field_id` int(11) unsigned NOT NULL,
 					`validator` varchar(100),
