@@ -5,7 +5,7 @@ An input field with advanced data source output for mail addresses and URIs.
 - Version: 1.1
 - Date: 8th May 2010
 - Author: Nils Hörrmann, post@nilshoerrmann.de
-- Repository: <http://github.com/nilshoerrmann/advanced_input>
+- Repository: <http://github.com/nilshoerrmann/output_field>
 - Requirements: Symphony CMS 2.0.6 or newer, <http://github.com/symphony/symphony-2/tree/master>
 
 ## Documentation
