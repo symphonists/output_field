@@ -25,14 +25,6 @@
 			Symphony::Database()->query("DROP TABLE `tbl_fields_output`");
 		}
 
-		public function update($previousVersion) {
-		
-			// Update older versions
-			return Symphony::Database()->query(
-				"RENAME TABLE `tbl_fields_advanced_input` to `tbl_fields_output` IF EXISTS"
-			);
-		}
-
 		public function install() {
 		
 			// Create database table and fields.
