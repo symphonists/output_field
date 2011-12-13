@@ -8,8 +8,8 @@
 		public function about() {
 			return array(
 				'name' => 'Field: Output',
-				'version' => '1.2',
-				'release-date' => '2011-02-01',
+				'version' => '1.2.1',
+				'release-date' => '2011-12-13',
 				'author' => array(
 					'name' => 'Nils Hörrmann',
 					'website' => 'http://nilshoerrmann.de',

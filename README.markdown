@@ -1,12 +1,6 @@
 # Output Field
 
-An input field with advanced data source output for mail addresses and URIs.
-
-- Version: 1.2
-- Date: 1st February 2011
-- Author: Nils Hörrmann, post@nilshoerrmann.de
-- Repository: <http://github.com/nilshoerrmann/output_field>
-- Requirements: Symphony CMS 2.2 or newer, <http://github.com/symphony/symphony-2/tree/master>
+Advanced data source output for mail addresses and URIs in input fields.
 
 ## Documentation
 
@@ -34,17 +28,3 @@ This extension extends Symphony's standard input field an offers a different dat
 - path
 - query, after the question mark `?`
 - fragment, after the hashmark `#`
-
-### Change Log
-
-**Version 1.2, 1st February 2011**
-
-- Symphony 2.2 compatibility
-
-**Version 1.1, 8th May 2010**
-
-- Renamed field from `advanced_input` to `output_field`
-
-**Version 1.0, 25th January 2010**
-
-- Initial release
