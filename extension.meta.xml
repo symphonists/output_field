@@ -2,7 +2,7 @@
 <extension id="output_field" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
 	<name>Output Field</name>
 	<description>Advanced data source output for input fields</description>
-	<repo type="github">https://github.com/nilshoerrmann/output_field</repo>
+	<repo type="github">https://github.com/hananils/output_field</repo>
 	<url type="discuss">http://symphony-cms.com/discuss/thread/37750/</url>
 	<types>
 		<type>Field Types</type>
