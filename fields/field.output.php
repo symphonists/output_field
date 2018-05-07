@@ -16,7 +16,7 @@
 			parent::__construct();
 			$this->_name = __('Text Output');
 			$this->_required = true;
-			
+
 			$this->set('required', 'no');
 		}
 
@@ -28,13 +28,13 @@
 		/**
 		 * @see http://symphony-cms.com/learn/api/2.3/toolkit/field/#appendFormattedElement
 		 */
-		function appendFormattedElement(&$wrapper, $data, $encode=false){
-			
+		function appendFormattedElement(XMLElement &$wrapper, $data, $encode = false, $mode = NULL, $entry_id = NULL){
+
 			include(TOOLKIT . '/util.validators.php');
 
 			if($this->get('apply_formatting') == 'yes' && isset($data['value_formatted'])) $value = $data['value_formatted'];
 			else $value = $data['value'];
-			
+
 			$value = General::sanitize($value);
 
 			// E-Mail
@@ -46,20 +46,20 @@
 					'hash' => md5(strtolower($value))
 				);
  			}
- 			
+
  			// URI
 			elseif($this->get('validator') == $validators['URI']) {
 				$attributes = parse_url($value);
 			}
-			
+
 			// Other input
  			else {
 				$attributes = array(
 					'handle' => $data['handle']
 				);
  			}
-			
+
 			$wrapper->appendChild(new XMLElement($this->get('element_name'), ($encode ? General::sanitize($value) : $value), $attributes));
 		}
-		
+
 	}
