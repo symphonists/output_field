@@ -14,12 +14,12 @@
 			<website>https://github.com/symphonists/</website>
 		</author>
 		<author>
-			<name github="nilshoerrmann" symphony="Nils">Nils Hörrmann</name>
-			<website>http://nilshoerrmann.de</website>
+			<name github="hananils" symphony="hananils">Büro für Web- und Textgestaltung</name>
+			<website>http://hananils.de</website>
 		</author>
 	</authors>
 	<releases>
-		<release version="2.1.0" date="2018-06-12" min="2.4.x" max="2.7.x">
+		<release version="2.1.0" date="2018-06-12" min="2.4.x" max="2.x.x">
 			- Code cleanup
 			- PHP 7 compatibility
 			- Symphony 2.7 compatibility
