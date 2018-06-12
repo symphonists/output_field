@@ -1,24 +1,32 @@
 # Output Field
 
-Advanced data source output for mail addresses and URIs in input fields.
+This extension for [Symphony CMS][1] extends the default input field and offers an optimized data source output for mail addresses and URIs.
 
-## Documentation
+## 1. Mail address 
 
-This extension extends Symphony's standard input field an offers a different data source output for mail addresses and URIs.
+**Example output:**
 
-**Mail address** 
+```xml
+<mailaddress alias="sam.symphonian" domain="getsymphony.com" hash="9a6ea6ecaa6ce46c0dcfb8415993e638">
+	sam.symphonian@getsymphony.com
+</mailaddress>
+```
 
-	<mailaddress alias="sam.symphonian" domain="symphony-cms.com" hash="9a6ea6ecaa6ce46c0dcfb8415993e638">
-		sam.symphonian@symphony-cms.com
-	</mailaddress>
+**Output parameters:**
 
 - alias 
 - domain
 - hash (useful for Gravatar integration)
 
-**URI** ([see PHP documentation](http://de.php.net/manual/en/function.parse-url.php))
+## 2. URI
 
-    <website scheme="http" host="symphony-cms.com">http://symphony-cms.com</website>
+**Example Output:**
+
+```xml
+<website scheme="http" host="getsymphony.com">http://getsymphony.com</website>
+```
+
+**Output parameters:**
 
 - scheme, e.g. `http`
 - host
@@ -28,3 +36,9 @@ This extension extends Symphony's standard input field an offers a different dat
 - path
 - query, after the question mark `?`
 - fragment, after the hashmark `#`
+
+[See PHP documentation for details][2]
+
+
+[1]: https://github.com/symphonycms
+[2]: http://de.php.net/manual/en/function.parse-url.php
