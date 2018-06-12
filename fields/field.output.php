@@ -10,7 +10,7 @@ class FieldOutput extends FieldInput
     /* DEFINITION & SETTINGS
     /*------------------------------------------------------------------------*/
 
-	/**
+    /**
      * CONSTRUCT
      *
      * Constructor for the Field object
@@ -33,7 +33,7 @@ class FieldOutput extends FieldInput
     /* DATA SOURCE
     /*------------------------------------------------------------------------*/
 
-	/**
+    /**
      * APPEND FORMATTED ELEMENT
      *
      * Appends data into the XML tree of a Data Source
