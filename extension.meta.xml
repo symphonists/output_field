@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="output_field" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0/">
+<extension id="output_field" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
 	<name>Output Field</name>
 	<description>An input field with advanced data source output for mail addresses and URIs</description>
 	<repo type="github">https://github.com/symphonists/output_field/</repo>
